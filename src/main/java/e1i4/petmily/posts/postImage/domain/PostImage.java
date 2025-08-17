@@ -1,4 +1,4 @@
-package e1i4.petmily.posts.postImage.domain;
+package e1i4.petmily.posts.postimage.domain;
 
 import e1i4.petmily.posts.post.domain.Post;
 import jakarta.persistence.*;

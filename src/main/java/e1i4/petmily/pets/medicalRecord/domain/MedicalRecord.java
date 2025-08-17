@@ -1,4 +1,4 @@
-package e1i4.petmily.pets.medicalRecord.domain;
+package e1i4.petmily.pets.medicalrecord.domain;
 
 import e1i4.petmily.pets.entry.domain.Entry;
 import jakarta.persistence.*;

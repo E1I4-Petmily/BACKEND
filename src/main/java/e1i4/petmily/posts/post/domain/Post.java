@@ -1,8 +1,8 @@
 package e1i4.petmily.posts.post.domain;
 
 import e1i4.petmily.posts.comment.domain.Comment;
-import e1i4.petmily.posts.postImage.domain.PostImage;
-import e1i4.petmily.posts.postLike.domain.PostLike;
+import e1i4.petmily.posts.postimage.domain.PostImage;
+import e1i4.petmily.posts.postlike.domain.PostLike;
 import e1i4.petmily.tags.tag.domain.Tag;
 import e1i4.petmily.user.domain.User;
 import jakarta.persistence.*;

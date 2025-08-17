@@ -3,7 +3,7 @@ package e1i4.petmily.user.domain;
 import e1i4.petmily.pets.pet.domain.Pet;
 import e1i4.petmily.posts.comment.domain.Comment;
 import e1i4.petmily.posts.post.domain.Post;
-import e1i4.petmily.posts.postLike.domain.PostLike;
+import e1i4.petmily.posts.postlike.domain.PostLike;
 import jakarta.persistence.*;
 import lombok.*;
 

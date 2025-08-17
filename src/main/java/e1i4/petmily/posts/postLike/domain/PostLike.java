@@ -1,4 +1,4 @@
-package e1i4.petmily.posts.postLike.domain;
+package e1i4.petmily.posts.postlike.domain;
 
 import e1i4.petmily.posts.post.domain.Post;
 import e1i4.petmily.user.domain.User;

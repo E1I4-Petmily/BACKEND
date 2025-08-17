@@ -2,7 +2,7 @@ package e1i4.petmily.tags.tag.domain;
 
 import e1i4.petmily.pets.entry.domain.Entry;
 import e1i4.petmily.posts.post.domain.Post;
-import e1i4.petmily.tags.tagCategory.domain.TagCategory;
+import e1i4.petmily.tags.tagcategory.domain.TagCategory;
 import jakarta.persistence.*;
 import lombok.*;
 

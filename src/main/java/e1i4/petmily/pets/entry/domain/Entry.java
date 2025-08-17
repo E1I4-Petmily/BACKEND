@@ -1,10 +1,10 @@
 package e1i4.petmily.pets.entry.domain;
 
-import e1i4.petmily.pets.medicalRecord.domain.MedicalRecord;
-import e1i4.petmily.pets.medicationIntake.domain.MedicationIntake;
-import e1i4.petmily.pets.noteImage.domain.NoteImage;
+import e1i4.petmily.pets.medicalrecord.domain.MedicalRecord;
+import e1i4.petmily.pets.medicationintake.domain.MedicationIntake;
+import e1i4.petmily.pets.noteimage.domain.NoteImage;
 import e1i4.petmily.pets.pet.domain.Pet;
-import e1i4.petmily.pets.weightLog.domain.WeightLog;
+import e1i4.petmily.pets.weightlog.domain.WeightLog;
 import e1i4.petmily.tags.tag.domain.Tag;
 import jakarta.persistence.*;
 import lombok.*;

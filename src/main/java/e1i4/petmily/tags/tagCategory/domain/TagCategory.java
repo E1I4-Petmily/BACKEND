@@ -1,4 +1,4 @@
-package e1i4.petmily.tags.tagCategory.domain;
+package e1i4.petmily.tags.tagcategory.domain;
 
 import e1i4.petmily.tags.tag.domain.Tag;
 import jakarta.persistence.*;

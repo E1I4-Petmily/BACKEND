@@ -1,4 +1,4 @@
-package e1i4.petmily.pets.noteImage.domain;
+package e1i4.petmily.pets.noteimage.domain;
 
 import e1i4.petmily.pets.entry.domain.Entry;
 import jakarta.persistence.*;
