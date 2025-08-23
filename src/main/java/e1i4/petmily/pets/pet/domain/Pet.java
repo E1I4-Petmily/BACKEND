@@ -25,7 +25,7 @@ public class Pet {
     private String name;
 
     @Enumerated(EnumType.STRING)
-    private Gender gender;
+    private GenderType gender;
 
     private Integer age;
 
@@ -48,7 +48,4 @@ public class Pet {
     @OneToMany(mappedBy = "pet", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<Entry> entries = new ArrayList<>();
 
-    public enum Gender{
-        MALE, FEMALE, UNKNOWN
-    }
 }

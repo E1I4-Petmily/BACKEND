@@ -30,7 +30,7 @@ public class Entry {
     private LocalDate entryDate;
 
     @Enumerated(EnumType.STRING)
-    private EntryKind entryKind;
+    private EntryType entryType;
 
     private LocalDateTime createdAt;
 

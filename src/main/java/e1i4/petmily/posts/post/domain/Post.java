@@ -61,7 +61,4 @@ public class Post {
     )
     private List<Tag> tags = new ArrayList<>();
 
-    public enum BoardType{
-        NOTICE, COMMUNITY, QNA
-    }
 }
