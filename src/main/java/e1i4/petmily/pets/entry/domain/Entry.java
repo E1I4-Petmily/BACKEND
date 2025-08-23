@@ -60,7 +60,4 @@ public class Entry {
     )
     private List<Tag> tags = new ArrayList<>();
 
-    public enum EntryKind {
-        MEDICAL, MEDICATION, WEIGHT, NOTE
-    }
 }
