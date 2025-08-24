@@ -1,5 +1,6 @@
 package e1i4.petmily.posts.post.domain;
 
+import e1i4.petmily.posts.animalTag.domain.AnimalTag;
 import e1i4.petmily.posts.comment.domain.Comment;
 import e1i4.petmily.posts.postimage.domain.PostImage;
 import e1i4.petmily.posts.postlike.domain.PostLike;
@@ -60,5 +61,9 @@ public class Post {
             inverseJoinColumns = @JoinColumn(name = "tag_id")
     )
     private List<Tag> tags = new ArrayList<>();
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "animal_tag_id", nullable = false)
+    private AnimalTag animalTag;
 
 }
