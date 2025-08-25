@@ -1,7 +1,10 @@
 package e1i4.petmily.users.service;
 
+import e1i4.petmily.users.domain.UserRole;
+import e1i4.petmily.users.dto.CustomOAuth2User;
 import e1i4.petmily.users.dto.GoogleResponse;
 import e1i4.petmily.users.dto.OAuth2Response;
+import e1i4.petmily.users.dto.UserDTO;
 import org.springframework.security.oauth2.client.userinfo.DefaultOAuth2UserService;
 import org.springframework.security.oauth2.client.userinfo.OAuth2UserRequest;
 import org.springframework.security.oauth2.core.OAuth2AuthenticationException;
@@ -27,5 +30,13 @@ public class CustomOAuth2UserService extends DefaultOAuth2UserService {
             return null;
         }
 
+        String username = oAuth2Response.getProvider() + " " + oAuth2Response.getProviderId();
+
+        UserDTO userDTO = new UserDTO();
+        userDTO.setUsername(username);
+        userDTO.setName(oAuth2Response.getName());
+        userDTO.setRole(UserRole.ROLE_USER);
+
+        return new CustomOAuth2User(userDTO);
     }
 }
