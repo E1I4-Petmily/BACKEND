@@ -1,5 +1,6 @@
 package e1i4.petmily.users.config;
 
+import e1i4.petmily.users.jwt.JWTFilter;
 import e1i4.petmily.users.jwt.JWTUtil;
 import e1i4.petmily.users.oauth2.CustomSuccessHandler;
 import e1i4.petmily.users.service.CustomOAuth2UserService;
@@ -9,6 +10,7 @@ import org.springframework.security.config.annotation.web.builders.HttpSecurity;
 import org.springframework.security.config.annotation.web.configuration.EnableWebSecurity;
 import org.springframework.security.config.http.SessionCreationPolicy;
 import org.springframework.security.web.SecurityFilterChain;
+import org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter;
 
 @Configuration
 @EnableWebSecurity
@@ -36,6 +38,10 @@ public class SecurityConfig {
 
         // HTTP Basic 인증 방식 disable
         http.httpBasic((auth) -> auth.disable());
+
+        //JWTFilter 추가
+        http
+                .addFilterBefore(new JWTFilter(jwtUtil), UsernamePasswordAuthenticationFilter.class);
 
         // oauth2
         http.oauth2Login((oauth2) -> oauth2
